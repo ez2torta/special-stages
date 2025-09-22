@@ -70,7 +70,7 @@ function carveSafeStart() {
   // Genera un corredor seguro inicial en la dirección -Z
   const half = Math.floor(gridSize / 2);
   const corridorLength = Math.min(12, Math.floor(gridSize / 2) - 1); // evita cubrir toda la grilla
-  const halfWidth = 2; // ancho lateral (2 => total 5)
+  const halfWidth = 5; // ancho lateral (2 => total 5)
   for (let dz = 0; dz >= -corridorLength; dz--) {
     for (let dx = -halfWidth; dx <= halfWidth; dx++) {
       const wx = dx; // centrado en x=0
